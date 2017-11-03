@@ -1,0 +1,1 @@
+pyside-uic.exe trade.ui > gui.py
