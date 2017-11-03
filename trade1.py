@@ -34,12 +34,14 @@ class MyMainWindow(QtGui.QMainWindow):
         self.ui.label_balance_btc.setText('%.4f'%total_btc)
         self.ui.label_balance_usd.setText('%.4f'%total_usd)
         list_balance=[]
+        """
         for i in range(len(df)):
             #balance_str=df.loc[i]['Currency']+' '+str(df.loc[i]['Balance'])+' '+str(df.loc[i]['BTC_VALUE'])+' '+str(df.loc[i]['percent'])
             balance_str=df.loc[i]['Currency']+'     %.4f     %.6fBtc    %.2f %%'%(df.loc[i]['Balance'],df.loc[i]['BTC_VALUE'],df.loc[i]['percent'])
             list_balance.append(balance_str)
         self.ui.list_balance.clear()   
         self.ui.list_balance.addItems(list_balance)   
+        """
     def btn_event_test(self):   
         #self.onShowWarning()
         self.get_stragery()
